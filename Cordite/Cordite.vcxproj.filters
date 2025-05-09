@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\cordite-rewrite\cordite-rewrite\main.cpp" />
+    <ClCompile Include="src\core\CommandRegister.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Config.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\DiscordClient.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\EventHandler.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\HttpClient.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\WebSocketClient.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\agents\Callback.cpp">
+      <Filter>src\agents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\agents\Callback_utils.cpp">
+      <Filter>src\agents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\agents\dead_agent_manager.cpp">
+      <Filter>src\agents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\Applications.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\Clipboard.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\CmdUtils.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\CommandHandler.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\DefenderExclusion.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\FileUtils.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\Location.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\ProcessList.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\Screenshot.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\sysinfo.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands\wifiProfiles.cpp">
+      <Filter>src\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\InitializationStatus.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{76554e0a-ac33-4d8a-9fac-39277d04454b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{41339c0f-4fed-4e8a-96a7-ef81c6c28e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a3068a4b-5238-49d2-bc5f-6bbed777526b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\agents">
+      <UniqueIdentifier>{d3785972-adc5-4725-87f6-feaab834b3ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\commands">
+      <UniqueIdentifier>{5d2fcd5e-77f3-45f0-a296-07c799d340c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{d12dc37d-2d3c-445f-9b1c-1dac51d33edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\agents">
+      <UniqueIdentifier>{a1ca492a-c78b-412e-be79-b0707403dd8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\commands">
+      <UniqueIdentifier>{a3d60d2c-efb3-4af2-a1c5-228843a09b1a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\CommandRegister.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Config.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\DiscordClient.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\EventHandler.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\HttpClient.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\WebSocketClient.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\agents\Callback.h">
+      <Filter>include\agents</Filter>
+    </ClInclude>
+    <ClInclude Include="include\agents\Callback_utils.h">
+      <Filter>include\agents</Filter>
+    </ClInclude>
+    <ClInclude Include="include\agents\dead_agent_manager.h">
+      <Filter>include\agents</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\Applications.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\Clipboard.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\CmdUtils.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\CommandHandler.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\DefenderExclusion.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\FileUtils.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\Location.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\ProcessList.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\Screenshot.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\sysinfo.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\commands\wifiProfiles.h">
+      <Filter>include\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\InitializationStatus.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+</Project>
