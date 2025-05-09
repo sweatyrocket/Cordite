@@ -8,6 +8,7 @@ namespace config {
         cfg.token = "";
         cfg.appId = "";
 
+
         cfg.beacon_chanel_id = "";
         cfg.commands_chanel_id = "";
         cfg.download_chanel_id = "";
