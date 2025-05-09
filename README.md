@@ -142,6 +142,7 @@ The following modules are planned but not yet included in this repository. These
 - **Privilege Escalation**: Attempts to elevate the process to administrator privileges.  
 
 These modules are already done but are not yet available in this repository.
+
 The Discord token extractor and chrome cookie stealing is demod in a early version of the c2 [video](https://youtu.be/LBfwBR8tOvo).
 
 ---
