@@ -9,16 +9,29 @@ import logging
 import threading
 import os
 import subprocess
+import sys
+from PIL import Image, ImageTk
 
 class CorditeBuilder:
     def __init__(self, root):
         self.root = root
         self.root.geometry("900x600")
         self.root.configure(bg="#36393F")
-        self.root.protocol("WM_DELETE_WINDOW", self.close_window)
-        self.root.overrideredirect(True)
-        self.root.title("Cordite C2")
-        self.root.wm_attributes("-topmost", 1)
+        self.no_window = '--no-window' in sys.argv
+        if self.no_window:
+            self.root.overrideredirect(True)
+            self.root.wm_attributes("-topmost", 1)
+        else:
+            self.root.title("Cordite C2")
+
+        try:
+            logo_image = Image.open("c2_logo.png")
+            logo_image = logo_image.resize((64, 64), Image.LANCZOS)
+            self.logo_photo = ImageTk.PhotoImage(logo_image)
+            self.root.iconphoto(True, self.logo_photo)
+        except Exception as e:
+            logging.error(f"Failed to load c2_logo.png for window icon: {e}")
+
         self.intents = discord.Intents.default()
         self.intents.guilds = True
         self.bot = None
@@ -43,7 +56,8 @@ class CorditeBuilder:
             "Europe/Budapest": {"offset": -60, "dst": True},
         }
         create_ui(self)
-        make_draggable(self.title_bar, self.root)
+        if self.no_window:
+            make_draggable(self.title_bar, self.root)
         self.loop = asyncio.new_event_loop()
         threading.Thread(target=self.run_asyncio_loop, daemon=True).start()
 
